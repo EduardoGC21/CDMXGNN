@@ -1,1 +1,1 @@
-Test
+Proyecto GNN de CDMX.
