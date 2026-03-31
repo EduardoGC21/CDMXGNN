@@ -1,1 +1,1 @@
-Proyecto GNN de CDMX.
+GNN project for cdmx
