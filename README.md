@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # CDMXGNN
 
 Proyecto para construir una representacion espacial de la Ciudad de Mexico orientada a recomendacion de ubicaciones comerciales mediante integracion por hexagono H3 y, despues, modelado relacional con GNN.
@@ -101,6 +100,3 @@ Actualmente se verifico que son legibles, entre otras:
 ## Nota sobre salidas legacy
 
 No toda la limpieza actual esta ya migrada a scripts `.py`. Algunas salidas que hoy se consideran validas para el proyecto todavia fueron generadas desde notebooks legacy, especialmente en `CRIMEN`, `PROXYS`, `RIESGO_NATURAL`, `SEMOVI`, `TOURISMO` y `SCIAN`.
-=======
-GNN project for cdmx
->>>>>>> ddbc912d09ae00581166957927a59d5b49644506
