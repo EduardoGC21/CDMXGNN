@@ -77,26 +77,3 @@ python .\1_CODE\0_DATA_CLEANING\OSM\osm_drive_network_extraction.py
 
 Nota: este ultimo paso solo extrae la red vial cruda para automovil y guarda sus tablas en `0_DATA/0_RAW/OSM`. Todavia no forma parte de `0_DATA/1_CLEAN`.
 
-## Salidas limpias verificadas
-
-Actualmente se verifico que son legibles, entre otras:
-
-- `CRIMEN/crime_attributes.parquet` y `CRIMEN/crime_points.parquet`
-- `INEGI/DENUE/denue_clean.parquet`
-- `INEGI/CENSO_ECO/censo_econ_municipio_prior.parquet`
-- `INEGI/CENSO_POB/censo_pob_operativo.parquet`
-- `MGE/entidad_cdmx.parquet`
-- `MGE/municipios_cdmx.parquet`
-- `MGE/ageb_urbana_cdmx.parquet`
-- `MGE/manzanas_cdmx.parquet`
-- `MGE/localidades_cdmx.parquet`
-- `PROXYS/predial_aprox.parquet`
-- `PROXYS/valor_suelo.parquet`
-- `RIESGO_NATURAL/riesgo.parquet`
-- `SEMOVI/ciclovias/ecobici.parquet`
-- `SEMOVI/ciclovias/via.parquet`
-- `TOURISMO/tourism.parquet`
-
-## Nota sobre salidas legacy
-
-No toda la limpieza actual esta ya migrada a scripts `.py`. Algunas salidas que hoy se consideran validas para el proyecto todavia fueron generadas desde notebooks legacy, especialmente en `CRIMEN`, `PROXYS`, `RIESGO_NATURAL`, `SEMOVI`, `TOURISMO` y `SCIAN`.
