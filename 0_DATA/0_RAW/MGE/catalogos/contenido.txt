@@ -1,0 +1,95 @@
+CONTENIDO
+
+El producto Marco Geoestadístico, 2025, es un producto conformado por archivos digitales en formato SHAPE, cuyo corte corresponde a la actualización cartográfica base julio 2025 y está integrado por 32 carpetas, cada una nombrada por la clave del área geoestadística estatal, con los siguientes totales nacionales: 2,478 áreas geoestadísticas municipales, 51,766 polígonos de localidades urbanas y rurales amanzanadas, 291,933 puntos de localidades rurales amanzanadas y no amanzanadas, 367 polígonos de territorio insular, 17,475 áreas geoestadísticas básicas rurales, 64,808 áreas geoestadísticas básicas urbanas y 2,634,771 manzanas urbanas y rurales (incluyendo caserío disperso); la información mantiene asociados, a manera de atributo, los nombres y claves geoestadísticas.
+
+La información del producto está organizada en tres carpetas en cada Área Geoestadística Estatal:
+* conjunto_de_datos: contiene los archivos vectoriales desagregados por capas de información.
+* catalogos: contiene los catálogos y la documentación del producto
+* metadatos: contiene los archivos en formato xml y txt, y un metadato con información nacional.
+
+Nombre y Contenido de los Archivos Vectoriales
+En la carpeta conjunto_de_datos, los nombres de los archivos se conforman con las claves alfanuméricas del Área Geoestadística Estatal y los sufijos son descriptivos del contenido del archivo:
+
+Donde:
+ee corresponde a la clave alfanumérica del Área Geoestadística Estatal: 01, 02,…32 conforme al Catálogo Único de Claves de Áreas Geoestadísticas Estatales, Municipales y Localidades.
+
+eeent	Área Geoestadística Estatal
+eemun	Área Geoestadística Municipal 
+eear	Área Geoestadística Básica Rural 
+eelpr	Localidad puntual rural
+eeti	Territorio insular
+eel	Localidad urbana y rural amanzanadas
+eepe	Polígono Externo (delimita el área de una localidad rural que contiene caserío disperso y servicios fuera de ésta)
+eepem	Polígono Externo de Manzana (contiene el caserío disperso en la periferia de la localidad urbana)
+eea	Área Geoestadística Básica Urbana eem	Polígono de manzana
+eefm	Frente de manzana
+eee	Eje de vialidad (segmento de vialidad cuya dimensión es variable) eecd	Caserío disperso
+eesia	Servicio e información complementaria de tipo área verde, camellón o glorieta, entre otros)
+
+
+
+
+eesil	Servicio e información complementaria de tipo línea (río, ferrocarril o corriente de agua, entre otros)
+eesip	Servicio e información complementaria de tipo puntual (palacio municipal o ayudantía, parque o jardín, entre otros)
+
+Cabe aclarar que las capas con sufijo ti, cd, pe, pem, sia, sil, sip, se incluyen únicamente si se contara con este tipo de información.
+Formato
+SHAPE
+
+Documentación
+En la carpeta catalogos se encuentra información adicional de algunos elementos que conforman el producto.
+* áreas_geoestadísticas_estatales
+* áreas_geoestadísticas_municipales
+* localidades_urbanas_y_rurales_amanzanadas
+* localidades_rurales_que_rebasan_su_ municipio
+* localidades_urbanas_que_rebasan_su_municipio
+* localidades_rurales_que_rebasan_AGEB
+* localidades_islas (localidades que se ubican en un municipio y administrativamente pertenecen a otro municipio)
+Los cuatro últimos detallan, de manera específica, situaciones especiales o de excepción que se presentan en algunas localidades.
+Estos archivos se presentan en formatos pdf y csv.
+
+Asimismo, en complemento a los archivos anteriores se encuentra el presente documento, además del documento de presentación Léeme; ambos están en formatos pdf y txt.
+Metadatos
+Finalmente, en la carpeta metadatos se incluyen los archivos digitales con la información cartográfica.
+
+Características técnicas de la información:
+Parámetros:
+Proyección: Cónica Conforme de Lambert (CCL) Dátum: ITRF2008.
+Elipsoide: GRS80.
+Meridiano origen: 102° 00’ 00’’ W.
+Latitud origen: 12° 00’ 00’’ N.
+Primer paralelo estándar: 17° 30’ N.
+Segundo paralelo estándar: 29° 30’ N.
+Falso Este: 2 500 000.
+Falso Norte: 0
+
+
+Fuente
+La base cartográfica utilizada corresponde al Marco Geoestadístico 2024 Planeación de la Encuesta Intercensal 2025.
+El software utilizado para la digitalización de la cartografía y generación de los archivos SHAPE fue ArcGis en su versión 10.8.1 y se puede presentar hasta 1 metro de tolerancia entre los diversos elementos del archivo vectorial.
+
+Estructura
+
+eeentÁreas geoestadísticas estatalesCAMPODESCRIPCIÓNCVEGEOClave geoestadística concatenadaCVE_ENTClave del AGEE NOMGEONombre geográfico de la entidad federativaeemunÁreas geoestadísticas municipalesCAMPODESCRIPCIÓNCVEGEOClave geoestadística concatenadaCVE_ENTClave del AGEE CVE_MUNClave del AGEMNOMGEONombre geográfico del municipio
+eearÁreas geoestadísticas básicas ruralesCAMPODESCRIPCIÓNCVEGEOClave geoestadística concatenadaCVE_ENTClave del AGEE CVE_MUNClave del AGEM CVE_AGEBClave de AGEB
+eelprPuntos de ubicación de localidades ruralesCAMPODESCRIPCIÓNCVEGEOClave geoestadística concatenadaCVE_ENTClave de AGEE CVE_MUNClave del AGEM CVE_LOCClave de la localidad geoestadísticaCVE_AGEBClave de AGEBCVE_MZAClave de manzanaNOMGEONombre geográfico de la localidadPLANOEstatus de amanzanamiento
+eetiTerritorio insularCAMPODESCRIPCIÓNCVEGEOClave geoestadística concatenadaCVE_ENTClave del AGEE CVE_MUNClave del AGEM CVE_AGEBClave de AGEBNOMGEONombre geográfico del territorio insular
+
+eel
+
+Localidad urbana y rural amanzanadaCAMPODESCRIPCIÓNCVEGEOClave geoestadística concatenadaCVE_ENTClave del AGEE CVE_MUNClave del AGEM CVE_LOCClave de la localidad geoestadísticaNOMGEONombre geográfico de la localidadÁMBITOÁmbito de localidad
+eea
+Áreas geoestadísticas básicas urbanasCAMPODESCRIPCIÓNCVEGEOClave geoestadística concatenadaCVE_ENTClave del AGEE CVE_MUNClave del AGEM CVE_LOCClave de la localidad geoestadísticaCVE_AGEBClave del AGEB
+
+eemManzanasCAMPODESCRIPCIÓNCVEGEOClave geoestadística concatenadaCVE_ENTClave del AGEE CVE_MUNClave del AGEM CVE_LOCClave de la localidad geoestadísticaCVE_AGEBClave del AGEBCVE_MZAClave de manzanaÁMBITOÁmbito de la manzanaTIPOMZATipo de manzana
+eecdCaserío dispersoCAMPODESCRIPCIÓNCVEGEOClave geoestadística concatenadaCVE_ENTClave del AGEE CVE_MUNClave del AGEM CVE_LOCClave de la localidad geoestadísticaCVE_AGEBClave del AGEBCVE_MZAClave de manzanaTIPOMZATipo de manzanaÁMBITOÁmbito de caserío disperso
+eefmFrente de manzanaCAMPODESCRIPCIÓNCVEGEOClave geoestadística concatenadaCVE_ENTClave del AGEE CVE_MUNClave del AGEM CVE_LOCClave de la localidad geoestadísticaCVE_AGEBClave del AGEBCVE_MZAClave de manzanaCVEVIALClave de vialidadCVESEGClave de segmentoCVEFTClave de frente de manzanaTIPOVIALTipo de vialidadNOMVIALNombre de vialidadCVEVIAL1Clave de vialidadCVESEG1Clave de segmentoCVEREF1Clave de frente de manzana de referenciaTIPOVR1Tipo de la primera vialidad de referenciaNOMREF1Nombre de la primera vialidad de referenciaCVEVIAL2Clave de vialidadCVESEG2Clave de segmentoCVEREF2Clave de frente de manzana de referenciaTIPOVR2Tipo de la segunda vialidad de referenciaNOMREF2Nombre de la segunda vialidad de referenciaCVEVIAL3Clave de vialidadCVESEG3Clave de segmentoCVEREF3Clave de frente posterior de manzana de referenciaTIPOVR3Tipo de la vialidad posterior de referenciaNOMREF3Nombre de la vialidad posterior de referencia
+eeeEje de vialidadCAMPODESCRIPCIÓNCVEGEOClave geoestadística concatenadaCVE_ENTClave de entidad federativaCVE_MUNClave del municipioCVE_LOCClave de localidadCVEVIALClave de vialidadCVESEGClave de segmentoNOMVIALNombre de vialidadTIPOVIALTipo de vialidadSENTIDOSentido de la vialidadTIPOSENTipo de sentido de vialidadÁMBITOÁmbito al que pertenece
+
+eesiaServicio de áreaCAMPODESCRIPCIÓNCVEGEOClave geoestadística concatenadaCVE_ENTClave del AGEE CVE_MUNClave del AGEM CVE_LOCClave de la localidad geoestadísticaCONDICIÓNSituación en la que se encuentra el objeto geográfico.GEOGRÁFICOTipo geográfico del servicio.NOMSERVNombre del servicioTIPOClasificación del objeto geográfico.CVE_SERVClave del servicioÁMBITOÁmbito del servicioeesilServicio de líneaCAMPODESCRIPCIÓNCVEGEOClave geoestadística concatenadaCVE_ENTClave del AGEE CVE_MUNClave del AGEM CVE_LOCClave de la localidad geoestadísticaCONDICIÓNSituación en la que se encuentra el objeto geográfico.GEOGRÁFICOTipo geográfico del servicio.NOMSERVNombre del servicioTIPOClasificación del objeto geográfico.CVE_SERVClave del servicioÁMBITOÁmbito del servicio
+eesip
+Servicio de puntoCAMPODESCRIPCIÓNCVEGEOClave geoestadística concatenadaCVE_ENTClave del AGEE CVE_MUNClave del AGEM CVE_LOCClave de la localidad geoestadísticaCVE_AGEBClave del AGEBCVE_MZAClave de manzanaCONDICIÓNSituación en la que se encuentra el objeto geográfico.GEOGRÁFICOTipo geográfico del servicio.NOMSERVNombre del servicioTIPOClasificación del objeto geográfico.CVE_SERVClave del servicioÁMBITOÁmbito del servicio
+eepePolígono externoCAMPODESCRIPCIÓNCVEGEOClave geoestadística concatenadaCVE_ENTClave del AGEE CVE_MUNClave del AGEM CVE_LOCClave de la localidad geoestadísticaeepemPolígono externo de manzanaCAMPODESCRIPCIÓNCVEGEOClave geoestadística concatenadaCVE_ENTClave del AGEE CVE_MUNClave del AGEM CVE_LOCClave de la localidad geoestadísticaCVE_AGEBClave de AGEBCVE_MZAClave de manzana
+
+
+CAPAS DE INFORMACIÓN DE SERVICIOS Y CONTENIDODATO GEOGRÁFICOGEOMETRÍACAPACamellónÁreaSIACuerpo de AguaÁreaSIAPista de AviaciónÁreaSIAAcueductoLíneaSILCaminoLíneaSILCanalLíneaSILCarreteraLíneaSILCorriente de AguaLínea / ÁreaSIL / SIAInstalación PortuariaLínea / ÁreaSIL / SIALinderoLíneaSILPaso a DesnivelLíneaSILPuenteLíneaSILTúnelLíneaSILVía FérreaLíneaSILAeródromo CivilPunto / ÁreaSIP / SIACementerioPunto / ÁreaSIP / SIACentro ComercialPuntoSIPCentro de Asistencia MédicaPunto / ÁreaSIP / SIAEscuelaPunto / ÁreaSIP / SIAEstación de TransportePunto / ÁreaSIP / SIAInfraestructura UrbanaPuntoSIPInstalación de ComunicaciónPuntoSIPInstalación de ServiciosPunto / ÁreaSIP / SIAInstalación Deportiva o RecreativaPunto / ÁreaSIP / SIAInstalación DiversaPunto / ÁreaSIP / SIAInstalación GubernamentalPuntoSIPInstalación IndustrialPunto / ÁreaSIP / SIALote BaldíoPuntoSIPMercadoPuntoSIPPlazaPunto / ÁreaSIP / SIAPozoPuntoSIPRestricción de Paso a Peatones y/o Automóviles.Punto / LíneaSIP / SILSubestación EléctricaPunto / ÁreaSIP / SIATanque de AguaPuntoSIPTemploPunto / ÁreaSIP / SIAZona ArqueológicaPunto / ÁreaSIP / SIA

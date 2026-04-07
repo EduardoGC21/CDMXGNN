@@ -1,6 +1,7 @@
 *.dbf
 *.zip
 *.geojson
+*.graphml
 *.shp
 *.shx
 *.xlsx
@@ -11,6 +12,7 @@
 *.csv
 *.pkl
 __pycache__/
+.venv/
 *.log
 *.tmp
 *.pt
@@ -24,3 +26,4 @@ __pycache__/
 *.png
 *.sbx
 *.sbn
+cache/

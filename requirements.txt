@@ -1,0 +1,7 @@
+geopandas
+osmnx
+pandas
+pyarrow
+pyproj
+shapely
+Unidecode

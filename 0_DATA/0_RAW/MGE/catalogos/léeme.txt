@@ -1,0 +1,78 @@
+LÉEME
+
+El Instituto Nacional de Estadística y Geografía (INEGI), responsable de brindar el servicio público de información estadística y geográfica, presenta el producto Marco Geoestadístico, 2025. Es un producto conformado por archivos digitales en formato SHAPE, cuyo corte corresponde a la actualización cartográfica base julio 2025 y está integrado por 32 carpetas, cada una nombrada por la clave del área geoestadística estatal, con los siguientes totales nacionales: 2,478 áreas geoestadísticas municipales, 51,766 polígonos de localidades urbanas y rurales amanzanadas, 291,933 puntos de localidades rurales amanzanadas y no amanzanadas, 367 polígonos de territorio insular, 17,475 áreas geoestadísticas básicas rurales, 64,808 áreas geoestadísticas básicas urbanas y 2,634,771 manzanas urbanas y rurales (incluyendo caserío disperso); la información presenta asociados como atributo, sus nombres y claves geoestadísticas.
+El Marco Geoestadístico es un sistema único y de carácter nacional diseñado por el INEGI, el cual presenta la división del país en diferentes niveles de desagregación, para referir geográficamente la información estadística institucional y de las unidades del estado que se integran al Sistema Nacional de Información Estadística y Geográfica (SNIEG).
+
+El producto Marco Geoestadístico, 2025, es la representación vectorial de los continuos estatales en sus diferentes niveles de desagregación, con sus respectivas claves y nombres, lo que permite integrar un Catálogo Único de Claves de Áreas Geoestadísticas Estatales, Municipales y de Localidades, actualizado al mes de julio 2025, con la finalidad de que las autoridades, la academia y nuestra sociedad, conjuntamente con el INEGI, utilicen una información homogénea. Del mismo modo, el Marco Geoestadístico, 2025, se tomará como base para la entrega de resultados de la Encuesta Intercensal 2025.
+
+Toda la información está referida con base a los parámetros: Cónica Conforme de Lambert (CCL) y Dátum ITRF2008 época 2010.0. Cabe aclarar que la ubicación, forma y proporción de los elementos llevados a su expresión cartográfica es aproximada, debido a la variedad de fuentes y métodos de compilación.
+
+Los archivos vectoriales se encuentran disponibles en formato SHAPE (SHP), los cuales pueden ser incorporados en sistemas de información geográfica (SIG).
+
+Nota: Los formatos fueron generados y probados en el software ArcGis ver. 10.8.1, y se puede presentar hasta 1 metro de tolerancia en huecos y/o traslapes en el archivo vectorial, entre sus diversos elementos
+Para el mejor aprovechamiento de los datos, es importante que el software del usuario sea adecuado a las necesidades y a las especificaciones de equipo de cómputo que se deben cumplir, para la correcta visualización de la información.
+
+Por sus características, el producto Marco Geoestadístico, 2025, puede ser utilizado por los sectores público, privado y académico, entre otros.
+Cabe señalar que el mencionado producto toma como base el archivo cartográfico digital inmediato anterior, que es el más actualizado (Marco Geoestadístico 2024 Planeación de la Encuesta Intercensal 2025). Además, se complementa con el presente documento y el documento Contenido que detalla las características técnicas de la información; los documentos referidos se encuentran en formato pdf y txt.
+
+
+
+Y en formatos pdf y csv, los catálogos de:
+* áreas_geoestadísticas_estatales
+* áreas_geoestadísticas_municipales
+* localidades_urbanas_y_rurales_amanzanadas
+* localidades_rurales_que_rebasan_su_ municipio
+* localidades_urbanas_que_rebasan_su_municipio
+* localidades_rurales_que_rebasan_AGEB
+localidades_islas (localidades que se ubican en un municipio y administrativamente pertenecen a otro municipio).
+Los cuatro últimos detallan, de manera específica, situaciones especiales o de excepción que se presentan en algunas localidades.
+Estos archivos se presentan en formatos pdf y csv.
+
+ESTRUCTURA DE ARCHIVOS
+Los archivos se encuentran organizados por Área Geoestadística Estatal y por capa, con base en la siguiente organización: ee\capa.
+Donde:
+ee corresponde a la clave alfanumérica del Área Geoestadística Estatal: 01, 02…32 (ver áreas_geoestadísticas_estatales.pdf), y la capa indica, con sufijos (ent, mun, etc.) el tipo de elemento contenido en cada archivo:
+
+eeent	Área Geoestadística Estatal
+eemun	Área Geoestadística Municipal
+eear	Área Geoestadística Básica Rural
+eelpr	Localidad puntual rural
+eeti	Territorio insular
+eel	Localidad urbana y rural amanzanada
+eepe	Polígono externo (delimitan el área de una localidad rural que contiene caserío disperso)
+eepem	Polígono Externo de Manzana (contiene el caserío disperso en la periferia de la localidad urbana)
+eea	Área Geoestadística Básica Urbana eem	Polígono de manzana
+eefm	Frente de manzana
+eee	Ejes de vialidad (segmentos de vialidad cuya dimensión es variable) 
+eecd	Caserío disperso
+eesia	Servicios e información complementaria de tipo área (área verde, camellón, glorieta, entre otros)
+eesil	Servicios e información complementaria de tipo línea (río, ferrocarril, corriente de agua, entre otros)
+eesip	Servicio e información complementaria de tipo puntual (palacio municipal o ayudantía, parque o jardín, entre otros)
+
+
+
+Cabe aclarar que las capas con sufijo ti, cd, pe, pem, sia, sil, sip, se incluyen únicamente si se contara con este tipo de información.
+
+Es importante resaltar que los polígonos externos (pe) se definen como el espacio geográfico que se caracteriza por contener caserío disperso, servicios y el amanzanamiento que conforman aquellas localidades rurales que cumplan con estas características. El polígono externo (pe) también delimita las localidades rurales que solo cuentan con caserío disperso (croquis).
+
+Los polígonos externos de manzanas (pem) son el espacio geográfico que se caracteriza por contener el caserío disperso o servicios en el ámbito urbano.
+Respecto a los Ejes de vialidad, estos están conformados por segmentos de vialidad cuya dimensión es variable y generalmente representa un corte al frente de cada manzana o donde se presenta un cambio en el nombre, tipo y/o sentido de la vialidad.
+
+La clave de vialidad toma los valores de 00001 a 69999 y para rasgos colindantes del 70000 a 70040, por localidad.
+
+Porque proporcionamos información para todos...
+¡México cuenta con el INEGI!
+
+Queda prohibida la reproducción total o parcial de este producto con fines de lucro, por cualquier medio, ya sea impreso o electrónico.
+Consecuentemente, la persona física o moral que sin autorización fotocopie, grabe, almacene en algún sistema o transmita a medios electrónicos o magnéticos dicha información, quedará sujeta a las disposiciones legales.
+
+Instituto Nacional de Estadística y Geografía Edificio Sede
+Av. Héroe de Nacozari Sur No. 2301 Fracc. Jardines del Parque, CP 20276 Aguascalientes, Aguascalientes, México.
+
+www.inegi.org.mx atencion.usuarios@inegi.org.mx
+Cualquier comentario, duda o aclaración respecto al producto, favor de dirigirse con: Mario Cruz González
+Director General Adjunto de Información Geográfica para la Administración del Territorio
+mario.cruz@inegi.org.mx
+
+
+Marco Geoestadístico, 2025.
