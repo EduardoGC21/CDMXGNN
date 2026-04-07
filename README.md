@@ -78,19 +78,43 @@ python .\1_CODE\0_DATA_CLEANING\OSM\osm_drive_network_extraction.py
 Nota: este ultimo paso solo extrae la red vial cruda para automovil y guarda sus tablas en `0_DATA/0_RAW/OSM`. Todavia no forma parte de `0_DATA/1_CLEAN`.
 
 
-## Datos a procesar en grafo
-CRIMEN/crime_attributes.parquet y CRIMEN/crime_points.parquet
-INEGI/DENUE/denue_clean.parquet
-INEGI/CENSO_ECO/censo_econ_municipio_prior.parquet
-INEGI/CENSO_POB/censo_pob_operativo.parquet
-MGE/entidad_cdmx.parquet
-MGE/municipios_cdmx.parquet
-MGE/ageb_urbana_cdmx.parquet
-MGE/manzanas_cdmx.parquet
-MGE/localidades_cdmx.parquet
-PROXYS/predial_aprox.parquet
-PROXYS/valor_suelo.parquet
-RIESGO_NATURAL/riesgo.parquet
-SEMOVI/ciclovias/ecobici.parquet
-SEMOVI/ciclovias/via.parquet
-TOURISMO/tourism.parquet
+## Datos Que Alimentan El Grafo
+
+Las capas actualmente consideradas para la construccion del grafo y del merge final por hexagono son:
+
+### Capas economicas y de actividad
+- `INEGI/DENUE/denue_clean.parquet`
+- `INEGI/CENSO_ECO/censo_econ_municipio_prior.parquet`
+- `TOURISMO/tourism.parquet`
+
+### Capas sociodemograficas
+- `INEGI/CENSO_POB/censo_pob_operativo.parquet`
+
+### Capas territoriales base
+- `MGE/entidad_cdmx.parquet`
+- `MGE/municipios_cdmx.parquet`
+- `MGE/ageb_urbana_cdmx.parquet`
+- `MGE/manzanas_cdmx.parquet`
+- `MGE/localidades_cdmx.parquet`
+
+### Capas de seguridad y riesgo
+- `CRIMEN/crime_attributes.parquet`
+- `CRIMEN/crime_points.parquet`
+- `RIESGO_NATURAL/riesgo.parquet`
+
+### Proxys urbanos y de valor
+- `PROXYS/predial_aprox.parquet`
+- `PROXYS/valor_suelo.parquet`
+
+### Movilidad y conectividad
+- `SEMOVI/ciclovias/ecobici.parquet`
+- `SEMOVI/ciclovias/via.parquet`
+- `OSM`
+  - actualmente en extraccion cruda de red vial
+  - se usara para features de conectividad automovilistica antes del merge final a hexagonos
+
+## Nota
+No todas las capas entran al grafo de la misma forma:
+- algunas se agregan por conteo de puntos por hexagono;
+- otras se transfieren por interseccion espacial o porcentaje de solape;
+- y otras funcionan como priors agregados a nivel municipio o localidad.
